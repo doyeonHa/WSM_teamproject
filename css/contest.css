@@ -105,7 +105,7 @@ nav i {
 }
 
 .nav-menu {
-    width: 100%;
+    width: 850px;
     font-size: var(--h3-font-size);
     margin: auto;
 }
@@ -225,11 +225,5 @@ td {
     }
     .show-menu {
         height: 250px;
-    }
-    .notice {
-        width: 500px;
-        height: 300px;
-        display: block;
-        margin: auto;
     }
 }
