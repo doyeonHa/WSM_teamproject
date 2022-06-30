@@ -177,9 +177,9 @@ footer {
     height: 150px;
     bottom: 0px;
     position: absolute;
-    background-color: #c4c4c4;
     padding-top: 15px;
     padding-left: 100px;
+    background-color: #c4c4c4;
 }
 
 #menu ul li {
