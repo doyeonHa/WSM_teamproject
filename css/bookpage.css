@@ -1,35 +1,21 @@
-/* Google Fonts */
-
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
-
-/* Variables CSS */
-
 :root {
     /* color */
     --first-color: hsl(160, 100%, 25%);
     --first-color-bright: hsl(160, 100%, 40%);
-    --second-color: hsl(339, 77%, 59%);
-    --third-color: hsl(42, 87%, 52%);
     --title-color: hsl(160, 0%, 0%);
     --text-color: hsl(160, 0%, 47%0);
     --body-color: #fff;
     --container-color: #fff;
-    /* font */
     --body-font: 'Do Hyeon', sans-serif;
     --biggest-font-size: 3rem;
     --h1-font-size: 2rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
-    --nomal-font-size: 1rem;
-    --small-font-size: 0.8rem;
-    --smaller-font-size: 0.75rem;
-    /* font weight */
     --font-medium: 500;
     --font-regular: 400;
-    /* z-index */
     --z-index: 100;
 }
-
 
 /* BASE */
 
@@ -108,13 +94,10 @@ nav i {
 }
 
 .nav-menu ul {
-    width: 1000px;
     margin: 0 auto;
 }
 
 .nav-menu ul li {
-    float: left;
-    width: 25%;
     height: 50px;
     line-height: 50px;
     text-align: center;
@@ -125,8 +108,9 @@ nav i {
 }
 
 .nav-menu {
-    width: 100%;
+    width: 850px;
     font-size: var(--h3-font-size);
+    margin: auto;
 }
 
 .nav-menu a {
@@ -134,10 +118,8 @@ nav i {
 }
 
 .nav-toggle {
-    /* visibility: hidden; 보이지는 않지만, 자리는 차치 */
     display: none;
     gap: 15rem;
-    display: none;
 }
 
 .nav-toggle i {
@@ -147,13 +129,13 @@ nav i {
 .nav-list {
     display: flex;
     column-gap: 0.75rem;
-    /*12px;*/
+    justify-content: space-around;
+    margin: 0 auto;
 }
 
 .nav-link {
     display: block;
     color: black;
-    /* 한 줄 전체를 차지해서 링크 동작 하도록 */
 }
 
 
@@ -203,9 +185,7 @@ main {
     background-color: #f3f3f3;
     border-radius: 1rem;
     flex: 1 0 240px;
-    /* 기본 240px이고 커지면 확장하자 */
     max-width: 300px;
-    /* 너무 넓지 않게 max 정하자 */
 }
 
 .card-image {
@@ -307,7 +287,7 @@ main {
 .card-image12 {
     height: 0;
     padding-bottom: 100%;
-    background: url("../bookpageimg/자바.png");
+    background: url("../bookpageimg/포토샵일러스트.png");
     background-size: cover;
     border-radius: 1rem 1rem 0 0;
 }
@@ -315,7 +295,7 @@ main {
 .card-image13 {
     height: 0;
     padding-bottom: 100%;
-    background: url("../bookpageimg/정석.png");
+    background: url("../bookpageimg/프리미어애프터.png");
     background-size: cover;
     border-radius: 1rem 1rem 0 0;
 }
@@ -323,7 +303,31 @@ main {
 .card-image14 {
     height: 0;
     padding-bottom: 100%;
-    background: url("../bookpageimg/C언어의\ 정석.png");
+    background: url("../bookpageimg/디자인테크닉.png");
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-image15 {
+    height: 0;
+    padding-bottom: 100%;
+    background: url("../bookpageimg/일러\ 1급.png");
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-image16 {
+    height: 0;
+    padding-bottom: 100%;
+    background: url("../bookpageimg/인디자인\ 1급.png");
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-image17 {
+    height: 0;
+    padding-bottom: 100%;
+    background: url("../bookpageimg/포토샵\ 2급.png");
     background-size: cover;
     border-radius: 1rem 1rem 0 0;
 }
@@ -349,7 +353,6 @@ main {
 .card-menu {
     margin-top: 1rem;
     text-align: center;
-    /* 메뉴 가운데 정렬 */
 }
 
 
@@ -364,23 +367,19 @@ main {
 @media screen and (max-width: 700px) {
     .nav-toggle {
         display: block;
-        /* nav-toggle 보이자 */
         position: absolute;
-        /* nav-logo 가운데 정렬 위치 */
         cursor: pointer;
     }
     .nav-logo {
         margin: 0 auto;
-        /* 가운데 정렬 */
+        left: 45%;
     }
     .nav-list {
         flex-direction: column;
-        /* align-items: center; */
         position: absolute;
         left: 0;
         right: 0;
         top: 100px;
-        /* width: 100%; */
         background-color: rgb(172, 172, 172);
         height: 0;
         overflow: hidden;
@@ -389,9 +388,16 @@ main {
     .nav-item {
         padding: 0.5rem 0;
         border-bottom: 1px solid gray;
-        margin-left: 10%;
+        text-align: center;
     }
     .show-menu {
         height: 250px;
     }
+    .notice {
+        width: 500px;
+        height: 300px;
+        display: block;
+        margin: auto;
+    }
+
 }
